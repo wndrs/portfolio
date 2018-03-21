@@ -1,0 +1,170 @@
+ 
+ 
+  <a className="w3-center" href="https://wndrs.github.io/tomProSkier.html">
+            <img src={demo}  className="w3-hover-opacity" alt="The mist over the mountains"/>
+          </a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ render() {
+        return (
+            <div className="w3-content w3-container w3-padding-64" id="video">
+              <h3 className="w3-center">MY WORK</h3>
+              <p className="w3-center">
+                <em>Here are some of my latest lorem work ipsum tipsum.
+                  Click on the images to make them bigger</em>
+              </p>
+          
+              
+              <div className="w3-row-padding w3-center">
+          
+          
+          
+           
+                <span className="w3-col s6 "  onClick="openNav2()">
+                  <img alt="" src={touring}  className="w3-hover-opacity"/>
+          
+                </span>
+                <div id="myNav2" className="overlay">
+          
+                  <a href="#video" className="closebtn" onClick="closeNav2()">&times;</a>
+          
+                  <div className="overlay-content">
+                    <h3>MY WORK</h3>
+          
+                    <p className="videoTexte">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua. or incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div className="frame">
+                      <iframe id="iframe2" src="https://player.vimeo.com/video/209289776" width="640" height="360" frameborder="0" webkitallowfullscreen
+                        mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+          
+          
+                  </div>
+                </div>
+
+                <span className="w3-col s6 "  onClick="openNav1()">
+                  <img alt=""  src="./video/stairsmaster.jpg" className="w3-hover-opacity"/>
+          
+                </span>
+                <div id="myNav1" className="overlay">
+          
+                  <a href="#video" className="closebtn" onClick="closeNav1()">&times;</a>
+          
+                  <div className="overlay-content">
+                    <h3>MY WORK</h3>
+          
+                    <p className="videoTexte">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua. or incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div className="frame">
+                      <iframe id="iframe1" src="https://player.vimeo.com/video/199738961" width="640" height="360" frameborder="0" webkitallowfullscreen
+                        mozallowfullscreen allowfullscreen ></iframe>
+                    </div>
+          
+                  </div>
+                </div>
+          
+          
+          
+          
+          
+          
+          
+     
+                <span className="w3-col s6 "  onClick="openNav()">
+                  <img alt=""  src="./video/skate.jpg"  className="w3-hover-opacity"/>
+          
+                </span>
+                <div id="myNav" className="overlay">
+          
+                  <a href="#video" className="closebtn" onClick="closeNav()">&times;</a>
+          
+                  <div className="overlay-content">
+                    <h3>MY WORK</h3>
+          
+          
+                    <p className="videoTexte">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua. or incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div className="frame">
+                      <iframe id="iframe" src="https://player.vimeo.com/video/189559042" width="640" height="360" frameborder="0" webkitallowfullscreen=""
+                        mozallowfullscreen="" allowfullscreen="" ></iframe>
+                    </div>
+                  </div>
+                </div>
+          
+          
+          
+          
+          
+                <span className="w3-col s6 "  onClick="openNav3()">
+                  <img alt=""  src="./video/pawsi.jpg"  className="w3-hover-opacity"/>
+          
+                </span>
+                <div id="myNav3" className="overlay">
+          
+                  <a href="#video" className="closebtn" onClick="closeNav3()">&times;</a>
+          
+                  <div className="overlay-content">
+                    <h3>MY WORK</h3>
+                    <img alt=""  src="./video/pawsi.gif"  />
+                    <p className="videoTexte" >Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua. or incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+                    <div className="frame">
+                      <iframe id="iframe3" src="https://player.vimeo.com/video/237827592" width="640" height="360" frameborder="0" webkitallowfullscreen
+                        mozallowfullscreen allowfullscreen ></iframe>
+                    </div>
+                  </div>
+          
+          
+                </div>
+          
+          
+          
+          
+          
+                <span className="w3-col s0  "  onClick="openNav4()">
+                  <img alt=""  src="./video/demo.jpg"  className="w3-hover-opacity"/>
+          
+                </span>
+                <div id="myNav4" className="overlay">
+          
+                  <a href="#video" className="closebtn" onClick="closeNav4()">&times;</a>
+          
+                  <div className="overlay-content">
+                    <h3>MY WORK</h3>
+          
+                    <p className="videoTexte">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua. or incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div className="frame">
+                      <iframe id="iframe4" src="https://player.vimeo.com/video/248658478" width="640" height="360" frameborder="0" webkitallowfullscreen
+                        mozallowfullscreen allowfullscreen ></iframe>
+                    </div>
+                  </div>
+                </div>
+          
+          
+          
+          
+              </div>
+          
+            </div>
+     );
+    }
+}
+
+export default VideoProject
