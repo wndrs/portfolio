@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import './style.css';
 import loopVideo from './parallax/loop.mp4';
-import loopVideoMobile from './parallax/loopMobile.mp4';
+import loopVideoMobile from './parallax/iphoneScreen.png';
 import logo from './parallax/logo.png'
 
 import { withGetScreen } from 'react-getscreen'
@@ -17,14 +17,22 @@ class VideoLoop extends Component {
         };
     }
   
-
+    componentDidMount() {
+        setTimeout(() => {
+          document.getElementById("load").style.display = "none"
+          document.getElementById("root").className = ""
+        }, 1000);
+    
+    
+      }
 
     componentWillMount() {
     
         if (this.props.isMobile()) {
             this.setState({
                 video: loopVideoMobile,
-                overlay2: "overlay7"
+                overlay2: "overlay7",
+                isMobile: true
             })
 
         }
@@ -32,7 +40,8 @@ class VideoLoop extends Component {
 
             this.setState({
                 video: loopVideo,
-                overlay2: "overlay2"
+                overlay2: "overlay2",
+                isMobile: false
 
             })
         }
@@ -61,14 +70,21 @@ class VideoLoop extends Component {
             }
         };
 
+        
         return (
             <div className="w3-bar-block w3-white " id="home">
                 <div className= "overlay3" ref="navbar" id="logoIntro">
                     {this.state.logo&&<img className={this.state.overlay2} src={logo} alt="" />}
                 </div>
-                <video className='introVideo' autoPlay loop muted>
+                {!this.state.isMobile&& <video className='introVideo' autoPlay loop muted>
                     <source src={this.state.video} type='video/mp4' />
-                </video>
+                </video>}
+
+                 {this.state.isMobile&& <img className='introVideo' src={this.state.video} alt="">
+                   
+                </img>}
+
+
             </div>
 
 

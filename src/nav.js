@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import logoWhite from './image/logoWhite.png'
 import logoBlack from './image/logoBlack.png'
+import scrollToComponent from 'react-scroll-to-component';
 
 class Nav extends Component {
     openNav = () => {
@@ -33,7 +34,7 @@ class Nav extends Component {
                         <i className="fa  "></i> ABOUT</a>
 
 
-                    <a href="#video" className=" test w3-bar-item  w3-hover-red w3-button w3-hide-small">
+                    <a  className=" test w3-bar-item  w3-hover-red w3-button w3-hide-small" onClick={() => scrollToComponent(this., { offset: 0, align: 'top', duration: 1500})}>
                         <i className="fa "></i> VIDEO</a>
                     <a href="#web" className=" test w3-bar-item  w3-hover-red w3-button w3-hide-small">
                         <i className="fa "></i> WEB</a>

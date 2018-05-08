@@ -35,18 +35,37 @@ class Photo extends Component {
         super();
 
         this.state = {
-            slideIndex: [photo1,photo2,photo3,photo4,photo5,photo6,photo7,photo8,photo9,photo10,photo11,photo12,photo13,photo14,photo16,photo17,photo18,photo19,photo20,photo21,photo22,photo23,photo24,photo25],
+            slideIndex: [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, photo11, photo12, photo13, photo14, photo16, photo17, photo18, photo19, photo20, photo21, photo22, photo23, photo24, photo25],
             modalImage: false
         };
     }
 
-    openModal = () => {
-        this.setState({ photoNum: 0 })
-        this.setState({
-            modalImage: true
-        })
-
-    }
+    openModal = () => { this.setState({ photoNum: 0 }); this.setState({ modalImage: true }) }
+    openModal1 = () => { this.setState({ photoNum: 1 }); this.setState({ modalImage: true }) }
+    openModal2 = () => { this.setState({ photoNum: 2 }); this.setState({ modalImage: true }) }
+    openModal3 = () => { this.setState({ photoNum: 3 }); this.setState({ modalImage: true }) }
+    openModal4 = () => { this.setState({ photoNum: 4 }); this.setState({ modalImage: true }) }
+    openModal5 = () => { this.setState({ photoNum: 5 }); this.setState({ modalImage: true }) }
+    openModal6 = () => { this.setState({ photoNum: 6 }); this.setState({ modalImage: true }) }
+    openModal7 = () => { this.setState({ photoNum: 7 }); this.setState({ modalImage: true }) }
+    openModal8 = () => { this.setState({ photoNum: 8 }); this.setState({ modalImage: true }) }
+    openModal9 = () => { this.setState({ photoNum: 9 }); this.setState({ modalImage: true }) }
+    openModal10 = () => { this.setState({ photoNum: 10 }); this.setState({ modalImage: true }) }
+    openModal11 = () => { this.setState({ photoNum: 11 }); this.setState({ modalImage: true }) }
+    openModal12 = () => { this.setState({ photoNum: 12 }); this.setState({ modalImage: true }) }
+    openModal13 = () => { this.setState({ photoNum: 13 }); this.setState({ modalImage: true }) }
+    openModal14 = () => { this.setState({ photoNum: 14 }); this.setState({ modalImage: true }) }
+    openModal15 = () => { this.setState({ photoNum: 15 }); this.setState({ modalImage: true }) }
+    openModal16 = () => { this.setState({ photoNum: 16 }); this.setState({ modalImage: true }) }
+    openModal17 = () => { this.setState({ photoNum: 17 }); this.setState({ modalImage: true }) }
+    openModal18 = () => { this.setState({ photoNum: 18 }); this.setState({ modalImage: true }) }
+    openModal19 = () => { this.setState({ photoNum: 19 }); this.setState({ modalImage: true }) }
+    openModal20 = () => { this.setState({ photoNum: 20 }); this.setState({ modalImage: true }) }
+    openModal21 = () => { this.setState({ photoNum: 21 }); this.setState({ modalImage: true }) }
+    openModal22 = () => { this.setState({ photoNum: 22 }); this.setState({ modalImage: true }) }
+    openModal23 = () => { this.setState({ photoNum: 23 }); this.setState({ modalImage: true }) }
+    openModal24 = () => { this.setState({ photoNum: 24 }); this.setState({ modalImage: true }) }
+    openModal25 = () => { this.setState({ photoNum: 25 }); this.setState({ modalImage: true }) }
 
     closeModal = () => {
         this.setState({
@@ -59,18 +78,18 @@ class Photo extends Component {
 
 
     plusSlides = () => {
-        if(this.state.photoNum < this.state.slideIndex.length - 1 )
-        this.setState({ photoNum : this.state.photoNum + 1})
-        else{
-            this.setState({ photoNum : 0})
+        if (this.state.photoNum < this.state.slideIndex.length - 1)
+            this.setState({ photoNum: this.state.photoNum + 1 })
+        else {
+            this.setState({ photoNum: 0 })
         }
     }
 
     MoinSlide = () => {
-        if(this.state.photoNum > 0 )
-        this.setState({ photoNum : this.state.photoNum - 1})
-        else{
-            this.setState({ photoNum : this.state.slideIndex.length -1 })
+        if (this.state.photoNum > 0)
+            this.setState({ photoNum: this.state.photoNum - 1 })
+        else {
+            this.setState({ photoNum: this.state.slideIndex.length - 1 })
         }
     }
 
@@ -95,77 +114,77 @@ class Photo extends Component {
                             <img alt="" src={this.state.slideIndex[0]} onClick={this.openModal} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
                         <div className="column padd">
-                            <img alt="" src={this.state.slideIndex[1]} onClick={this.openModal} className="hover-shadow w3-hover-opacity cursor width100" />
+                            <img alt="" src={this.state.slideIndex[1]} onClick={this.openModal1} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
                         <div className="column padd">
-                            <img alt="" src={this.state.slideIndex[2]} onClick={this.openModal} className="hover-shadow w3-hover-opacity cursor width100" />
+                            <img alt="" src={this.state.slideIndex[2]} onClick={this.openModal2} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
                         <div className="column padd">
-                            <img alt="" src={this.state.slideIndex[3]} onClick={this.openModal} className="hover-shadow w3-hover-opacity cursor width100" />
+                            <img alt="" src={this.state.slideIndex[3]} onClick={this.openModal3} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
                         <div className="column padd">
-                            <img alt="" src={this.state.slideIndex[4]} onClick={this.openModal} className="hover-shadow w3-hover-opacity  cursor width100" />
+                            <img alt="" src={this.state.slideIndex[4]} onClick={this.openModal4} className="hover-shadow w3-hover-opacity  cursor width100" />
                         </div>
                         <div className="column padd">
-                            <img alt="" src={this.state.slideIndex[5]} onClick={this.openModal} className="hover-shadow w3-hover-opacity cursor width100" />
+                            <img alt="" src={this.state.slideIndex[5]} onClick={this.openModal5} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
                         <div className="column padd">
-                            <img alt="" src={this.state.slideIndex[6]} onClick={this.openModal} className="hover-shadow w3-hover-opacity cursor width100" />
+                            <img alt="" src={this.state.slideIndex[6]} onClick={this.openModal6} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
                         <div className="column padd">
-                            <img alt="" src={this.state.slideIndex[7]} onClick={this.openModal} className="hover-shadow w3-hover-opacity cursor width100" />
+                            <img alt="" src={this.state.slideIndex[7]} onClick={this.openModal7} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
                         <div className="column padd">
-                            <img alt="" src={this.state.slideIndex[8]} onClick={this.openModal} className="hover-shadow w3-hover-opacity cursor width100" />
+                            <img alt="" src={this.state.slideIndex[8]} onClick={this.openModal8} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
                         <div className="column padd">
-                            <img alt="" src={this.state.slideIndex[9]} onClick={this.openModal} className="hover-shadow w3-hover-opacity cursor width100" />
+                            <img alt="" src={this.state.slideIndex[9]} onClick={this.openModal9} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
                         <div className="column padd">
-                            <img alt="" src={this.state.slideIndex[10]} onClick={this.openModal} className="hover-shadow w3-hover-opacity cursor width100" />
+                            <img alt="" src={this.state.slideIndex[10]} onClick={this.openModal10} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
                         <div className="column padd">
-                            <img alt="" src={this.state.slideIndex[11]} onClick={this.openModal} className="hover-shadow w3-hover-opacity cursor width100" />
+                            <img alt="" src={this.state.slideIndex[11]} onClick={this.openModal11} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
                         <div className="column padd ">
-                            <img alt="" src={this.state.slideIndex[12]} onClick={this.openModal} className="hover-shadow w3-hover-opacity cursor width100" />
+                            <img alt="" src={this.state.slideIndex[12]} onClick={this.openModal12} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
                         <div className="column padd">
-                            <img alt="" src={this.state.slideIndex[13]} onClick={this.openModal} className="hover-shadow w3-hover-opacity cursor width100" />
+                            <img alt="" src={this.state.slideIndex[13]} onClick={this.openModal13} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
                         <div className="column padd">
-                            <img alt="" src={this.state.slideIndex[14]} onClick={this.openModal} className="hover-shadow w3-hover-opacity cursor width100" />
+                            <img alt="" src={this.state.slideIndex[14]} onClick={this.openModal14} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
                         <div className="column padd">
-                            <img alt="" src={this.state.slideIndex[15]} onClick={this.openModal} className="hover-shadow cursor w3-hover-opacity width100" />
+                            <img alt="" src={this.state.slideIndex[15]} onClick={this.openModal15} className="hover-shadow cursor w3-hover-opacity width100" />
                         </div>
                         <div className="column padd">
-                            <img alt="" src={this.state.slideIndex[16]} onClick={this.openModal} className="hover-shadow cursor w3-hover-opacity width100" />
+                            <img alt="" src={this.state.slideIndex[16]} onClick={this.openModal16} className="hover-shadow cursor w3-hover-opacity width100" />
                         </div>
                         <div className="column padd">
-                            <img alt="" src={this.state.slideIndex[17]} onClick={this.openModal} className="hover-shadow cursor w3-hover-opacity width100" />
+                            <img alt="" src={this.state.slideIndex[17]} onClick={this.openModal17} className="hover-shadow cursor w3-hover-opacity width100" />
                         </div>
                         <div className="column padd">
-                            <img alt="" src={this.state.slideIndex[18]} onClick={this.openModal} className="hover-shadow cursor w3-hover-opacity width100" />
+                            <img alt="" src={this.state.slideIndex[18]} onClick={this.openModal18} className="hover-shadow cursor w3-hover-opacity width100" />
                         </div>
                         <div className="column padd">
-                            <img alt="" src={this.state.slideIndex[19]} onClick={this.openModal} className="hover-shadow cursor w3-hover-opacity width100" />
+                            <img alt="" src={this.state.slideIndex[19]} onClick={this.openModal19} className="hover-shadow cursor w3-hover-opacity width100" />
                         </div>
                         <div className="column padd">
-                            <img alt="" src={this.state.slideIndex[20]} onClick={this.openModal} className="hover-shadow cursor w3-hover-opacity width100" />
+                            <img alt="" src={this.state.slideIndex[20]} onClick={this.openModal20} className="hover-shadow cursor w3-hover-opacity width100" />
                         </div>
                         <div className="column padd">
-                            <img alt="" src={this.state.slideIndex[21]} onClick={this.openModal} className="hover-shadow cursor w3-hover-opacity width100" />
+                            <img alt="" src={this.state.slideIndex[21]} onClick={this.openModal21} className="hover-shadow cursor w3-hover-opacity width100" />
                         </div>
                         <div className="column padd">
-                            <img alt="" src={this.state.slideIndex[22]} onClick={this.openModal} className="hover-shadow cursor w3-hover-opacity width100" />
+                            <img alt="" src={this.state.slideIndex[22]} onClick={this.openModal22} className="hover-shadow cursor w3-hover-opacity width100" />
                         </div>
                         <div className="column padd">
-                            <img alt="" src={this.state.slideIndex[23]} onClick={this.openModal} className="hover-shadow cursor width100" />
+                            <img alt="" src={this.state.slideIndex[23]} onClick={this.openModal23} className="hover-shadow cursor width100" />
                         </div>
 
                     </div>
-                    
+
 
 
                 </div>
@@ -182,7 +201,7 @@ class Photo extends Component {
                 <div className="modal-content">
 
                     <div className="mySlides">
-                        <div className="numbertext">{this.state.photoNum+1} / {this.state.slideIndex.length}</div>
+                        <div className="numbertext">{this.state.photoNum + 1} / {this.state.slideIndex.length}</div>
                         <img alt="" src={this.state.slideIndex[this.state.photoNum]} className="width100" />
                     </div>
 
