@@ -1,178 +1,53 @@
 import React, { Component } from 'react';
 import './style.css';
 import './App.css';
-import VideoLoop from './videoLoop.js'
-import AboutMe from './aboutMe.js'
-import VideoProject from './videoProject.js'
-import WebProject from './webProject.js'
-import Photo from './photo.js'
-import Contact from './contact.js'
-import ScrollUpButton from "react-scroll-up-button";
-import scrollToComponent from 'react-scroll-to-component';
-import logoWhite from './image/logoWhite.png'
-import logoBlack from './image/logoBlack.png'
+import Home from './Home.js'
+import stairsmasterComp from './stairsmasterComp.js'
+import { withRouter,Route, } from 'react-router-dom'
+import { Router,  Switch,} from 'react-router'
+
+
+
+import { BrowserRouter, } from 'react-router-dom'
+import photoGal from './photoGal.js';
+
+
 
 class App extends Component {
   constructor() {
     super();
 
     this.state = {
-      loading: true,
+      curentVuePath: "home"
     };
   }
 
+  
+  componentDidMount() {
+    setTimeout(() => {
+      document.getElementById("load").style.display = "none"
+      document.getElementById("root").className = ""
+      
+    }, 2000);
 
-  // componentDidMount() {
-  //   setTimeout(() => {
-  //     document.getElementById("load").style.display = "none"
-  //     document.getElementById("root").className = ""
-  //   }, 1000);
-
-
-  // }
-  openNav = () => {
-    document.getElementById("navDemo").className = "w3-bar-block w3-white  w3-hide-large w3-hide-medium"
   }
-  closeNav = () => {
-    document.getElementById("navDemo").className = "w3-hide w3-bar-block w3-white  w3-hide-large w3-hide-medium"
-    
-  }
+
+
 
 
 
   render() {
-    if (document.body.scrollTop > -1 || document.documentElement.scrollTop > -1) {
-
-    }
     return (
-      <div className="App">
+    
+      <Switch>
+     
+       
+       <Route exact path='/' component={Home} />
+       <Route path='/stairsmasterComp' component={stairsmasterComp}  />
+       <Route path='/photoGal' component={photoGal}  />
+        </Switch>
 
-        <div className="w3-top">
-          <div className="w3-bar wN-white" id="myNavbar">
-            <a className="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right"
-              title="Toggle Navigation Menu" onClick={this.openNav} >
-              <i className="fa fa-bars"></i>
-            </a>
-            <a href="#home" className="w3-bar-item w3-hover-red w3-button  w3-hide-small " onClick={() => scrollToComponent(this.Home, { offset: 0, align: 'top', duration: 1500 })}>HOME</a>
-            <a href="https://vimeo.com/wndrs" className="w3-bar-item w3-hover-red w3-button w3-hide-large w3-hide-medium  ">
-
-
-              <img className="hidden" id="logoB2" src={logoBlack} alt={"logo"} />
-              <img className="logoWhite" id="logoW2" src={logoWhite} alt={"logo"} />
-
-
-
-            </a>
-            <a className="w3-bar-item  w3-hide-small w3-button w3-hover-red" onClick={() => scrollToComponent(this.About, { offset: 0, align: 'top', duration: 1500 })}>
-              <i className="fa  "></i> ABOUT</a>
-
-
-            <a className=" test w3-bar-item  w3-hover-red w3-button w3-hide-small" onClick={() => scrollToComponent(this.Video, { offset: 0, align: 'top', duration: 1500 })}>
-              <i className="fa "></i> VIDEO</a>
-            <a className=" test w3-bar-item  w3-hover-red w3-button w3-hide-small" onClick={() => scrollToComponent(this.Web, { offset: 0, align: 'top', duration: 1500 })}>
-              <i className="fa "></i> WEB</a>
-            <a className=" test w3-bar-item  w3-hover-red w3-button w3-hide-small" onClick={() => scrollToComponent(this.photo, { offset: 0, align: 'top', duration: 1500 })}>
-              <i className="fa "></i> PHOTO</a>
-            <a className="w3-bar-item w3-button  w3-hover-red w3-hide-small" onClick={() => scrollToComponent(this.ContactMe, { offset: 0, align: 'top', duration: 1500 })}>
-              <i className="fa "></i> CONTACT</a>
-            <a href="https://vimeo.com/wndrs" className=" w3-button w3-hide-small w3-right w3-hover-red">
-              <img className="logoWhite" id="logoW" src={logoWhite} alt="logo" />
-              <img className="logoWhite hidden " id="logoB" src={logoBlack} alt="logo" />
-
-            </a>
-
-          </div>
-
-          {/* <!-- Navbar on small screens --> */}
-
-          <div id="navDemo" className="w3-hide w3-bar-block w3-white  w3-hide-large w3-hide-medium">
-            <a href="#about" className="w3-bar-item w3-button" onClick={() => { scrollToComponent(this.About, { offset: 0, align: 'top', duration: 1500 }); this.closeNav() }}>ABOUT</a>
-            <a className="w3-bar-item w3-button" onClick={() => { scrollToComponent(this.Video, { offset: 0, align: 'top', duration: 1500 }); this.closeNav() }}>VIDEO</a>
-            <a href="#web" className="w3-bar-item w3-button" onClick={() => { scrollToComponent(this.Web, { offset: 0, align: 'top', duration: 1500 }); this.closeNav() }}>WEB</a>
-            <a href="#portfolio" className="w3-bar-item w3-button" onClick={() => { scrollToComponent(this.photo, { offset: 0, align: 'top', duration: 1500 }); this.closeNav() }}>PHOTO</a>
-            <a href="#contact" className="w3-bar-item w3-button" onClick={() => { scrollToComponent(this.ContactMe, { offset: 0, align: 'top', duration: 1500 }); this.closeNav() }}>CONTACT</a>
-
-          </div>
-         
-         
-          {/* <!-- Navbar on small screens no-scrolling --> */}
-         
-         
-          {/* <div id="navDemo" className="w3-hide w3-bar-block w3-white  w3-hide-large w3-hide-medium">
-                    <a href="#about" className="w3-bar-item w3-button" onClick={this.closeNav}>ABOUT</a>
-                    <a href="#video" className="w3-bar-item w3-button" onClick={this.closeNav}>VIDEO</a>
-                    <a href="#web" className="w3-bar-item w3-button" onClick={this.closeNav}>WEB</a>
-                    <a href="#portfolio" className="w3-bar-item w3-button" onClick={this.closeNav}>PHOTO</a>
-
-                    <a href="#contact" className="w3-bar-item w3-button" onClick={this.closeNav}>CONTACT</a>
-                </div> */}
-        </div>
-
-        <VideoLoop ref={(section) => { this.Home = section; }} />
-        <AboutMe ref={(section) => { this.About = section; }} />
-
-
-        <div className="bgimg-2 w3-display-container w3-opacity-min">
-          <div className="w3-display-middle">
-            <span className="w3-xxlarge w3-text-white w3-wide">VIDEO</span>
-          </div>
-        </div>
-
-
-
-        <VideoProject ref={(section) => { this.Video = section; }} />
-
-
-        <div className="bgimg-4 w3-display-container w3-opacity-min">
-          <div className="w3-display-middle">
-            <span className="w3-xxlarge w3-text-white w3-wide">WEB</span>
-          </div>
-        </div>
-
-        <WebProject ref={(section) => { this.Web = section; }} />
-
-
-        <div className="bgimg-3 w3-display-container w3-opacity-min">
-          <div className="w3-display-middle">
-            <span className="w3-xxlarge w3-text-white w3-wide">PHOTO</span>
-          </div>
-        </div>
-        <Photo ref={(section) => { this.photo = section; }} />
-        <div className="bgimg-5 w3-display-container w3-opacity-min ">
-          <div className="w3-display-middle">
-            <span className="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-          </div>
-        </div>
-
-        <Contact ref={(section) => { this.ContactMe = section; }} />
-
-
-
-
-        <div>
-          <ScrollUpButton
-            StopPosition={0}
-            TransitionBtnPosition={150}
-            EasingType='easeOutCubic'
-            AnimationDuration={2500}
-            ContainerClassName='ScrollUpButton__Container'
-            TransitionClassName='ScrollUpButton__Toggled'
-          >
-            <div className="w3-center">
-              <a className="w3-button">
-                <i className="fa fa-arrow-up w3-margin-right"></i>To The Top</a>
-            </div>
-
-          </ScrollUpButton>
-        </div>
-
-      </div>
-
-
-
-
-
-    );
+    )
   }
 }
 

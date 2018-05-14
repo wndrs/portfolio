@@ -20,7 +20,7 @@ class Nav extends Component {
                         title="Toggle Navigation Menu" onClick={this.openNav} >
                         <i className="fa fa-bars"></i>
                     </a>
-                    <a href="#home" className="w3-bar-item w3-hover-red w3-button  w3-hide-small ">HOME</a>
+                    <a  className="w3-bar-item w3-hover-red w3-button  w3-hide-small ">HOME</a>
                     <a href="https://vimeo.com/wndrs" className="w3-bar-item w3-hover-red w3-button w3-hide-large w3-hide-medium  ">
 
 
@@ -42,7 +42,7 @@ class Nav extends Component {
                         <i className="fa "></i> PHOTO</a>
                     <a href="#contact" className="w3-bar-item w3-button  w3-hover-red w3-hide-small">
                         <i className="fa "></i> CONTACT</a>
-                    <a href="https://vimeo.com/wndrs" className=" w3-button w3-hide-small w3-right w3-hover-red">
+                    <a  className=" w3-button w3-hide-small w3-right w3-hover-red">
                         <img className="logoWhite" id="logoW" src={logoWhite} alt="logo" />
                         <img className="logoWhite hidden " id="logoB" src={logoBlack} alt="logo"/>
 
