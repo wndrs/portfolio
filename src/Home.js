@@ -54,7 +54,7 @@ class Home extends Component {
               title="Toggle Navigation Menu" onClick={this.openNav} >
               <i className="fa fa-bars"></i>
             </a>
-            <a  className="w3-bar-item w3-hover-red w3-button  w3-hide-small " onClick={() => scrollToComponent(this.Home, { offset: 0, align: 'top', duration: 1500 })}>HOME</a>
+            <a className="w3-bar-item w3-hover-red w3-button  w3-hide-small " onClick={() => scrollToComponent(this.Home, { offset: 0, align: 'top', duration: 1500 })}>HOME</a>
             <a className="w3-bar-item w3-hover-red w3-button w3-hide-large w3-hide-medium  ">
 
 
@@ -72,7 +72,7 @@ class Home extends Component {
               <i className="fa "></i> VIDEO</a>
             <a className=" test w3-bar-item  w3-hover-red w3-button w3-hide-small" onClick={() => scrollToComponent(this.Web, { offset: 0, align: 'top', duration: 1500 })}>
               <i className="fa "></i> WEB</a>
-            <a className=" test w3-bar-item  w3-hover-red w3-button w3-hide-small" onClick={() => scrollToComponent(this.photo, { offset: 0, align: 'top', duration: 1500 })}>
+            <a className=" test w3-bar-item  w3-hover-red w3-button w3-hide-small" onClick={() => scrollToComponent(this.photo, { offset: 400, align: 'top', duration: 1500 })}>
               <i className="fa "></i> PHOTO</a>
             <a className="w3-bar-item w3-button  w3-hover-red w3-hide-small" onClick={() => scrollToComponent(this.ContactMe, { offset: 0, align: 'top', duration: 1500 })}>
               <i className="fa "></i> CONTACT</a>
@@ -87,11 +87,11 @@ class Home extends Component {
           {/* <!-- Navbar on small screens --> */}
 
           <div id="navDemo" className="w3-hide w3-bar-block w3-white  w3-hide-large w3-hide-medium">
-            <a href="#about" className="w3-bar-item w3-button" onClick={() => { scrollToComponent(this.About, { offset: 0, align: 'top', duration: 1500 }); this.closeNav() }}>ABOUT</a>
+            <a className="w3-bar-item w3-button" onClick={() => { scrollToComponent(this.About, { offset: 0, align: 'top', duration: 1500 }); this.closeNav() }}>ABOUT</a>
             <a className="w3-bar-item w3-button" onClick={() => { scrollToComponent(this.Video, { offset: 0, align: 'top', duration: 1500 }); this.closeNav() }}>VIDEO</a>
-            <a href="#web" className="w3-bar-item w3-button" onClick={() => { scrollToComponent(this.Web, { offset: 0, align: 'top', duration: 1500 }); this.closeNav() }}>WEB</a>
-            <a href="#portfolio" className="w3-bar-item w3-button" onClick={() => { scrollToComponent(this.photo, { offset: 0, align: 'top', duration: 1500 }); this.closeNav() }}>PHOTO</a>
-            <a href="#contact" className="w3-bar-item w3-button" onClick={() => { scrollToComponent(this.ContactMe, { offset: 0, align: 'top', duration: 1500 }); this.closeNav() }}>CONTACT</a>
+            <a className="w3-bar-item w3-button" onClick={() => { scrollToComponent(this.Web, { offset: 0, align: 'top', duration: 1500 }); this.closeNav() }}>WEB</a>
+            <a className="w3-bar-item w3-button" onClick={() => { scrollToComponent(this.photo, { offset: 400, align: 'top', duration: 1500 }); this.closeNav() }}>PHOTO</a>
+            <a className="w3-bar-item w3-button" onClick={() => { scrollToComponent(this.ContactMe, { offset: 0, align: 'top', duration: 1500 }); this.closeNav() }}>CONTACT</a>
 
           </div>
 
@@ -135,12 +135,12 @@ class Home extends Component {
         <WebProject ref={(section) => { this.Web = section; }} />
 
 
-        <div className="bgimg-3 w3-display-container w3-opacity-min">
+        <div className="bgimg-3 w3-display-container w3-opacity-min" ref={(section) => { this.photo = section; }}>
           <div className="w3-display-middle">
             <span className="w3-xxlarge w3-text-white w3-wide">PHOTO</span>
           </div>
         </div>
-        <Photo ref={(section) => { this.photo = section; }} />
+        <Photo />
         <div className="bgimg-5 w3-display-container w3-opacity-min ">
           <div className="w3-display-middle">
             <span className="w3-xxlarge w3-text-white w3-wide">CONTACT</span>

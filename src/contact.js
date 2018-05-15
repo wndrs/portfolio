@@ -32,8 +32,8 @@ class Contact extends Component {
 
 
       
-            <div className="w3-hover-red"><i className="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> MONTREAL, QC<br /></div>
-            <div className="w3-hover-red"><i className="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (514) 712 0366<br /></div>
+            <div><i className="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> MONTREAL, QC<br /></div>
+            <div ><i className="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (514) 712 0366<br /></div>
             <div onClick={this.sendMail} className="w3-hover-red"><i className="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right "></i> provostnoe@gmail.com <br/></div>
         
 

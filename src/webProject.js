@@ -7,7 +7,7 @@ import tomProSkier from "./web/tomProSkier.png"
 import logoanim1 from "./web/logoanim1.png"
 import poster from "./web/poster.png"
 import Artboard from "./web/Artboard 1.png"
-import wndrs from "./images/wndrs anim .png"
+import wndrs from "./image/wndrs anim .png"
 import commingSoon from "./image/commingSoon.png"
 
 

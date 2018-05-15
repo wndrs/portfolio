@@ -240,12 +240,19 @@ background-position: center;
 
 }
 
+.arrow{
+  width: 100px;
 
+  opacity: .55;
+}
+.arrow:hover{
+  opacity: 1;
+}
 .frame{
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 30px;
 }
 @media only screen and (max-device-width: 420px) {

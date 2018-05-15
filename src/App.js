@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import './style.css';
 import './App.css';
 import Home from './Home.js'
-import stairsmasterComp from './stairsmasterComp.js'
+import stairsmasterComp from './component/stairsmasterComp.js'
+import touring from './component/touring.js'
+import skate from './component/skate'
+import pawsi from './component/pawsi'
+
 import { withRouter,Route, } from 'react-router-dom'
 import { Router,  Switch,} from 'react-router'
 
@@ -43,8 +47,18 @@ class App extends Component {
      
        
        <Route exact path='/' component={Home} />
-       <Route path='/stairsmasterComp' component={stairsmasterComp}  />
-       <Route path='/photoGal' component={photoGal}  />
+       <Route path='/touring' component={touring}  />
+       <Route path='/stairsmaster' component={stairsmasterComp}  />
+       <Route path='/skate' component={skate}  />
+       <Route path='/pawsi' component={pawsi}  />
+       
+       
+       
+       
+       
+       
+       
+    <Route path='/photoGal' component={photoGal}  />
         </Switch>
 
     )

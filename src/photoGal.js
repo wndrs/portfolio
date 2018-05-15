@@ -36,12 +36,35 @@ class photoGal extends Component {
     super();
 
     this.state = {
-
+        slideIndex: [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, photo11, photo12, photo13, photo14, photo15, photo16, photo17, photo18, photo19, photo20, photo21, photo22, photo23, photo24],
     };
   }
+  componentDidMount() {
+   
+    this.setState({ photoNum: this.props.location.state.photoIs })
+  }
+   
 
- 
+    closeModal = () => {
+        this.props.history.push("/")
 
+    }
+    plusSlides = () => {
+        if (this.state.photoNum < this.state.slideIndex.length - 1)
+            this.setState({ photoNum: this.state.photoNum + 1 })
+        else {
+            this.setState({ photoNum: 0 })
+        }
+    }
+
+    MoinSlide = () => {
+        if (this.state.photoNum > 0)
+            this.setState({ photoNum: this.state.photoNum - 1 })
+        else {
+            this.setState({ photoNum: this.state.slideIndex.length - 1 })
+        }
+    }
+   
   render() {
 
       return (
@@ -59,6 +82,7 @@ class photoGal extends Component {
             <a className="next" onClick={this.plusSlides}>&#10095;</a>
 
         </div>
+
     </div>
 
 
@@ -67,4 +91,4 @@ class photoGal extends Component {
   }
 }
 
-export default photoGal
+export default withRouter(photoGal)

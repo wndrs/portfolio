@@ -11,6 +11,7 @@ import firebase from "./image/firebase.jpg";
 import node_js from "./image/node_js.png";
 import angular from "./image/angular.png";
 import ai from "./image/ai.png";
+import comp1 from "./image/Composition-1.gif";
 
 
 
@@ -31,11 +32,12 @@ class AboutMe extends Component {
       <div className="w3-content w3-container w3-padding-64" id="about">
         <h3 className="w3-center">ABOUT ME</h3>
         <p className="w3-center">
-          <em>Part time everything</em>
+        <img src={comp1} className="comp1"  alt="" />
+      
         </p>
-        <p align="justify">Study mechanical engineering and loved it, but decided to take a big turn and do what i love the most “film and edit sick movies”. 
-          Turns out i was pretty good on my computer so i quickly end up learning motion design and coding. I’m now working as a motion designer / web developer on contact basis <a className="clickme" href="https://www.w3schools.com/html/">see my C.V.</a>  In my spare time (beside surfing, skiing and kiting), i do vidéo 
-          under the name of WNDRS with my partner Zachary Bleau.
+        <p align="justify">I’m a 24 years old creative technologist, wich mean i’m using leading edge technology to execute creative marketing
+         campaigns. My Recent graduation from decodemtl as a fullstack web developer, my background as a freelancer motion designer and my passion
+          for art and video editing really give me the opportuniti to bring some creative ideas to life.
     </p>
         <div className="w3-row">
           <div className="w3-col m6 w3-center ">

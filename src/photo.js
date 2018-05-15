@@ -42,89 +42,70 @@ class Photo extends Component {
         };
     }
 
-    openModal = () => {  this.props.history.push("/some/Path")}
-    openModal1 = () => { this.setState({ photoNum: 1 }); this.setState({ modalImage: true }) }
-    openModal2 = () => { this.setState({ photoNum: 2 }); this.setState({ modalImage: true }) }
-    openModal3 = () => { this.setState({ photoNum: 3 }); this.setState({ modalImage: true }) }
-    openModal4 = () => { this.setState({ photoNum: 4 }); this.setState({ modalImage: true }) }
-    openModal5 = () => { this.setState({ photoNum: 5 }); this.setState({ modalImage: true }) }
-    openModal6 = () => { this.setState({ photoNum: 6 }); this.setState({ modalImage: true }) }
-    openModal7 = () => { this.setState({ photoNum: 7 }); this.setState({ modalImage: true }) }
-    openModal8 = () => { this.setState({ photoNum: 8 }); this.setState({ modalImage: true }) }
-    openModal9 = () => { this.setState({ photoNum: 9 }); this.setState({ modalImage: true }) }
-    openModal10 = () => { this.setState({ photoNum: 10 }); this.setState({ modalImage: true }) }
-    openModal11 = () => { this.setState({ photoNum: 11 }); this.setState({ modalImage: true }) }
-    openModal12 = () => { this.setState({ photoNum: 12 }); this.setState({ modalImage: true }) }
-    openModal13 = () => { this.setState({ photoNum: 13 }); this.setState({ modalImage: true }) }
-    openModal14 = () => { this.setState({ photoNum: 14 }); this.setState({ modalImage: true }) }
-    openModal15 = () => { this.setState({ photoNum: 15 }); this.setState({ modalImage: true }) }
-    openModal16 = () => { this.setState({ photoNum: 16 }); this.setState({ modalImage: true }) }
-    openModal17 = () => { this.setState({ photoNum: 17 }); this.setState({ modalImage: true }) }
-    openModal18 = () => { this.setState({ photoNum: 18 }); this.setState({ modalImage: true }) }
-    openModal19 = () => { this.setState({ photoNum: 19 }); this.setState({ modalImage: true }) }
-    openModal20 = () => { this.setState({ photoNum: 20 }); this.setState({ modalImage: true }) }
-    openModal21 = () => { this.setState({ photoNum: 21 }); this.setState({ modalImage: true }) }
-    openModal22 = () => { this.setState({ photoNum: 22 }); this.setState({ modalImage: true }) }
-    openModal23 = () => { this.setState({ photoNum: 23 }); this.setState({ modalImage: true }) }
-    openModal24 = () => { this.setState({ photoNum: 24 }); this.setState({ modalImage: true }) }
+    openModal = () => { this.props.history.push("/photoGal", { photoIs: 0 }) }
+    openModal1 = () => { this.props.history.push("/photoGal", { photoIs: 1 }) }
+    openModal2 = () => { this.props.history.push("/photoGal", { photoIs: 2 }) }
+    openModal3 = () => { this.props.history.push("/photoGal", { photoIs: 3 }) }
+    openModal4 = () => { this.props.history.push("/photoGal", { photoIs: 4 }) }
+    openModal5 = () => { this.props.history.push("/photoGal", { photoIs: 5 }) }
+    openModal6 = () => { this.props.history.push("/photoGal", { photoIs: 6 }) }
+    openModal7 = () => { this.props.history.push("/photoGal", { photoIs: 7 }) }
+    openModal8 = () => { this.props.history.push("/photoGal", { photoIs: 8 }) }
+    openModal9 = () => { this.props.history.push("/photoGal", { photoIs: 9 }) }
+    openModal10 = () => { this.props.history.push("/photoGal", { photoIs: 10 }) }
+    openModal11 = () => { this.props.history.push("/photoGal", { photoIs: 11 }) }
+    openModal12 = () => { this.props.history.push("/photoGal", { photoIs: 12 }) }
+    openModal13 = () => { this.props.history.push("/photoGal", { photoIs: 13 }) }
+    openModal14 = () => { this.props.history.push("/photoGal", { photoIs: 14 }) }
+    openModal15 = () => { this.props.history.push("/photoGal", { photoIs: 15 }) }
+    openModal16 = () => { this.props.history.push("/photoGal", { photoIs: 16 }) }
+    openModal17 = () => { this.props.history.push("/photoGal", { photoIs: 17 }) }
+    openModal18 = () => { this.props.history.push("/photoGal", { photoIs: 18 }) }
+    openModal19 = () => { this.props.history.push("/photoGal", { photoIs: 19 }) }
+    openModal20 = () => { this.props.history.push("/photoGal", { photoIs: 20 }) }
+    openModal21 = () => { this.props.history.push("/photoGal", { photoIs: 21 }) }
+    openModal22 = () => { this.props.history.push("/photoGal", { photoIs: 22 }) }
+    openModal23 = () => { this.props.history.push("/photoGal", { photoIs: 23 }) }
+    openModal24 = () => { this.props.history.push("/photoGal", { photoIs: 24 }) }
 
-
-
-    closeModal = () => {
-        this.setState({
-            modalImage: false
-        })
-
+    loadImage =() => {
+        this.setState({moreImages:true})
     }
-
-
-
-
-    plusSlides = () => {
-        if (this.state.photoNum < this.state.slideIndex.length - 1)
-            this.setState({ photoNum: this.state.photoNum + 1 })
-        else {
-            this.setState({ photoNum: 0 })
-        }
-    }
-
-    MoinSlide = () => {
-        if (this.state.photoNum > 0)
-            this.setState({ photoNum: this.state.photoNum - 1 })
-        else {
-            this.setState({ photoNum: this.state.slideIndex.length - 1 })
-        }
+    loadLess =() => {
+        this.setState({moreImages:false})
     }
 
 
     render() {
 
-        if (this.state.modalImage === false) {
 
-            return (
 
-                <div className="w3-content w3-container w3-padding-64" id="portfolio">
-                    <h3 className="w3-center">MY WORK</h3>
-                    <p className="w3-center">
-                        <em>Here are some of my latest lorem work ipsum tipsum.
+        return (
+
+            <div className="w3-content w3-container w3-padding-64" id="portfolio">
+                <h3 className="w3-center">MY WORK</h3>
+                <p className="w3-center">
+                    <em>Here are some of my latest lorem work ipsum tipsum.
                     <br /> Click on the images to make them bigger</em>
-                    </p>
-                    <br />
+                </p>
+                <br />
 
 
-                    <div className="w3-row w3-center">
-                        <div className="w3-col s3 padding2 ">
-                            <img alt="" src={this.state.slideIndex[0]} onClick={this.openModal} className="hover-shadow w3-hover-opacity cursor width100" />
-                        </div>
-                        <div className="w3-col s3 padding2">
-                            <img alt="" src={this.state.slideIndex[1]} onClick={this.openModal1} className="hover-shadow w3-hover-opacity cursor width100" />
-                        </div>
-                        <div className="w3-col s3 padding2">
-                            <img alt="" src={this.state.slideIndex[2]} onClick={this.openModal2} className="hover-shadow w3-hover-opacity cursor width100" />
-                        </div>
-                        <div className="w3-col s3 padding2">
-                            <img alt="" src={this.state.slideIndex[3]} onClick={this.openModal3} className="hover-shadow w3-hover-opacity cursor width100" />
-                        </div>
+                <div className="w3-row w3-center">
+                    <div className="w3-col s3 padding2 ">
+                        <img alt="" src={this.state.slideIndex[0]} onClick={this.openModal} className="hover-shadow w3-hover-opacity cursor width100" />
+                    </div>
+                    <div className="w3-col s3 padding2">
+                        <img alt="" src={this.state.slideIndex[1]} onClick={this.openModal1} className="hover-shadow w3-hover-opacity cursor width100" />
+                    </div>
+                    <div className="w3-col s3 padding2">
+                        <img alt="" src={this.state.slideIndex[2]} onClick={this.openModal2} className="hover-shadow w3-hover-opacity cursor width100" />
+                    </div>
+                    <div className="w3-col s3 padding2">
+                        <img alt="" src={this.state.slideIndex[3]} onClick={this.openModal3} className="hover-shadow w3-hover-opacity cursor width100" />
+                    </div>
+
+                    {this.state.moreImages &&<div>
                         <div className="w3-col s3 padding2">
                             <img alt="" src={this.state.slideIndex[4]} onClick={this.openModal4} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
@@ -149,9 +130,9 @@ class Photo extends Component {
                         <div className="w3-col s3 padding2">
                             <img alt="" src={this.state.slideIndex[11]} onClick={this.openModal11} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
-                    </div>
+                    </div>}
 
-                    <div className="w3-row w3-center">
+                   {this.state.moreImages && <div className="w3-row w3-center">
 
                         <div className="w3-col s3 padding2 ">
                             <img alt="" src={this.state.slideIndex[12]} onClick={this.openModal12} className="hover-shadow w3-hover-opacity cursor width100" />
@@ -190,36 +171,28 @@ class Photo extends Component {
                             <img alt="" src={this.state.slideIndex[23]} onClick={this.openModal23} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
 
-                    </div>
-
-
-
-                </div >
-            );
-
-
-
-
-        }
-        return (
-
-            <div id="myModal" className="modal">
-                <span className="close cursor" onClick={this.closeModal}>&times;</span>
-                <div className="modal-content">
-
-                    <div className="mySlides">
-                        <div className="numbertext">{this.state.photoNum + 1} / {this.state.slideIndex.length}</div>
-                        <img alt="" src={this.state.slideIndex[this.state.photoNum]} className="width100" />
-                    </div>
-
-
-                    <a className="prev" onClick={this.MoinSlide}>&#10094;</a>
-                    <a className="next" onClick={this.plusSlides}>&#10095;</a>
-
+                    </div>}
+                   
                 </div>
-            </div>
+                {!this.state.moreImages && <div className="w3-center loadMore"onClick={this.loadImage}>
+          
+                <a className="w3-center padding1 w3-hover-red " onClick={this.loadImage}> Load more images</a>
+                </div>}
 
+
+                {this.state.moreImages && <div className="w3-center loadMore"onClick={this.loadLess}>
+          
+          <a className="w3-center padding1 w3-hover-red " onClick={this.loadLess}> Show Less</a>
+          </div>}
+
+            </div >
         );
+
+
+
+
+
+
     }
 }
 
