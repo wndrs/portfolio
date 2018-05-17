@@ -43,7 +43,7 @@ class stairsmasterComp extends Component {
           <img className="logoWidth" id="logoW" src={touringLogo} alt="logo" />
           <div className="frame">
             <img className="arrow " id="logoW" onClick={this.moin} src={arrow2} alt="logo" />
-            <iframe id="iframe2" title="touring" src="https://player.vimeo.com/video/209289776" width="640" height="360" frameBorder="0" webkitallowfullscreen="true"
+            <iframe className="iphoneframe" id="iframe2" title="touring" src="https://player.vimeo.com/video/209289776" width="640" height="360" frameBorder="0" webkitallowfullscreen="true"
               mozallowfullscreen="true" allowFullScreen></iframe>
             <img className="arrow" id="logoW" onClick={this.plus} src={arrow} alt="logo" />
           </div>

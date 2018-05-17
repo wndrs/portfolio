@@ -103,7 +103,7 @@ class VideoProject extends Component {
 
           </div>
           <div className="w3-col s0 padding1">
-            <img alt="" src={demo} className="w3-hover-opacity width100" onClick={this.demoClick}/>
+          <Link to='/demo'> <img alt="" src={demo} className="w3-hover-opacity width100" onClick={this.demoClick}/></Link>
 
           </div>
 

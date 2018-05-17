@@ -92,82 +92,83 @@ class Photo extends Component {
 
 
                 <div className="w3-row w3-center">
-                    <div className="w3-col s3 padding2 ">
+                    <div className="w3-col s4 padding2 ">
                         <img alt="" src={this.state.slideIndex[0]} onClick={this.openModal} className="hover-shadow w3-hover-opacity cursor width100" />
                     </div>
-                    <div className="w3-col s3 padding2">
+                    <div className="w3-col s4 padding2">
                         <img alt="" src={this.state.slideIndex[1]} onClick={this.openModal1} className="hover-shadow w3-hover-opacity cursor width100" />
                     </div>
-                    <div className="w3-col s3 padding2">
+                    <div className="w3-col s4 padding2">
                         <img alt="" src={this.state.slideIndex[2]} onClick={this.openModal2} className="hover-shadow w3-hover-opacity cursor width100" />
                     </div>
-                    <div className="w3-col s3 padding2">
+                    <div className="w3-col s4 padding2">
                         <img alt="" src={this.state.slideIndex[3]} onClick={this.openModal3} className="hover-shadow w3-hover-opacity cursor width100" />
                     </div>
 
-                    {this.state.moreImages &&<div>
-                        <div className="w3-col s3 padding2">
+                  
+                        <div className="w3-col s4 padding2">
                             <img alt="" src={this.state.slideIndex[4]} onClick={this.openModal4} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
-                        <div className="w3-col s3 padding2">
+                        <div className="w3-col s4 padding2">
                             <img alt="" src={this.state.slideIndex[5]} onClick={this.openModal5} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
-                        <div className="w3-col s3 padding2">
+                        <div className="w3-col s4 padding2">
                             <img alt="" src={this.state.slideIndex[6]} onClick={this.openModal6} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
-                        <div className="w3-col s3 padding2">
+                        <div className="w3-col s4 padding2">
                             <img alt="" src={this.state.slideIndex[7]} onClick={this.openModal7} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
-                        <div className="w3-col s3 padding2">
+                        <div className="w3-col s4 padding2">
                             <img alt="" src={this.state.slideIndex[8]} onClick={this.openModal8} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
-                        <div className="w3-col s3 padding2">
+                        {this.state.moreImages &&<div>
+                        <div className="w3-col s4 padding2">
                             <img alt="" src={this.state.slideIndex[9]} onClick={this.openModal9} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
-                        <div className="w3-col s3 padding2">
+                        <div className="w3-col s4 padding2">
                             <img alt="" src={this.state.slideIndex[10]} onClick={this.openModal10} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
-                        <div className="w3-col s3 padding2">
+                        <div className="w3-col s4 padding2">
                             <img alt="" src={this.state.slideIndex[11]} onClick={this.openModal11} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
                     </div>}
 
                    {this.state.moreImages && <div className="w3-row w3-center">
 
-                        <div className="w3-col s3 padding2 ">
+                        <div className="w3-col s4 padding2 ">
                             <img alt="" src={this.state.slideIndex[12]} onClick={this.openModal12} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
-                        <div className="w3-col s3 padding2">
+                        <div className="w3-col s4 padding2">
                             <img alt="" src={this.state.slideIndex[13]} onClick={this.openModal13} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
-                        <div className="w3-col s3 padding2">
+                        <div className="w3-col s4 padding2">
                             <img alt="" src={this.state.slideIndex[14]} onClick={this.openModal14} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
-                        <div className="w3-col s3 padding2">
+                        <div className="w3-col s4 padding2">
                             <img alt="" src={this.state.slideIndex[15]} onClick={this.openModal15} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
-                        <div className="w3-col s3 padding2">
+                        <div className="w3-col s4 padding2">
                             <img alt="" src={this.state.slideIndex[16]} onClick={this.openModal16} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
-                        <div className="w3-col s3 padding2">
+                        <div className="w3-col s4 padding2">
                             <img alt="" src={this.state.slideIndex[17]} onClick={this.openModal17} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
-                        <div className="w3-col s3 padding2">
+                        <div className="w3-col s4 padding2">
                             <img alt="" src={this.state.slideIndex[18]} onClick={this.openModal18} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
-                        <div className="w3-col s3 padding2">
+                        <div className="w3-col s4 padding2">
                             <img alt="" src={this.state.slideIndex[19]} onClick={this.openModal19} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
-                        <div className="w3-col s3 padding2">
+                        <div className="w3-col s4 padding2">
                             <img alt="" src={this.state.slideIndex[20]} onClick={this.openModal20} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
-                        <div className="w3-col s3 padding2">
+                        <div className="w3-col s4 padding2">
                             <img alt="" src={this.state.slideIndex[21]} onClick={this.openModal21} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
-                        <div className="w3-col s3 padding2">
+                        <div className="w3-col s4 padding2">
                             <img alt="" src={this.state.slideIndex[22]} onClick={this.openModal22} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
-                        <div className="w3-col s3 padding2">
+                        <div className="w3-col s4 padding2">
                             <img alt="" src={this.state.slideIndex[23]} onClick={this.openModal23} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
 

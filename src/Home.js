@@ -11,6 +11,7 @@ import ScrollUpButton from "react-scroll-up-button";
 import scrollToComponent from 'react-scroll-to-component';
 import logoWhite from './image/logoWhite.png'
 import logoBlack from './image/logoBlack.png'
+import { Link } from 'react-router-dom'
 import { Router, Route, Switch } from 'react-router'
 
 class Home extends Component {
@@ -32,11 +33,19 @@ class Home extends Component {
 
   // }
   openNav = () => {
-    document.getElementById("navDemo").className = "w3-bar-block w3-white  w3-hide-large w3-hide-medium"
+    if(this.state.nav === true){
+      this.closeNav();
+    }
+    else{
+      document.getElementById("navDemo").className = "w3-bar-block w3-white  w3-hide-large w3-hide-medium"
+      this.setState({nav:true});
+    }
+  
   }
   closeNav = () => {
+    
     document.getElementById("navDemo").className = "w3-hide w3-bar-block w3-white  w3-hide-large w3-hide-medium"
-
+    this.setState({nav:false});
   }
 
 
@@ -55,15 +64,15 @@ class Home extends Component {
               <i className="fa fa-bars"></i>
             </a>
             <a className="w3-bar-item w3-hover-red w3-button  w3-hide-small " onClick={() => scrollToComponent(this.Home, { offset: 0, align: 'top', duration: 1500 })}>HOME</a>
-            <a className="w3-bar-item w3-hover-red w3-button w3-hide-large w3-hide-medium  ">
+            <div className="w3-bar-item w3-hover-red w3-button w3-hide-large w3-hide-medium  ">
 
-
+  <Link to='/wndrs'>
               <img className="hidden" id="logoB2" src={logoBlack} alt={"logo"} />
               <img className="logoWhite" id="logoW2" src={logoWhite} alt={"logo"} />
+              </Link > 
 
 
-
-            </a>
+            </div>
             <a className="w3-bar-item  w3-hide-small w3-button w3-hover-red" onClick={() => scrollToComponent(this.About, { offset: 0, align: 'top', duration: 1500 })}>
               <i className="fa  "></i> ABOUT</a>
 
@@ -76,12 +85,12 @@ class Home extends Component {
               <i className="fa "></i> PHOTO</a>
             <a className="w3-bar-item w3-button  w3-hover-red w3-hide-small" onClick={() => scrollToComponent(this.ContactMe, { offset: 0, align: 'top', duration: 1500 })}>
               <i className="fa "></i> CONTACT</a>
-            <a className=" w3-button w3-hide-small w3-right w3-hover-red">
-              <img className="logoWhite" id="logoW" src={logoWhite} alt="logo" />
-              <img className="logoWhite hidden " id="logoB" src={logoBlack} alt="logo" />
+             <div className=" w3-button w3-hide-small w3-right w3-hover-red">
+             <Link to='/wndrs'>  <img className="logoWhite" id="logoW" src={logoWhite} alt="logo" /> 
+            <img className="logoWhite hidden " id="logoB" src={logoBlack} alt="logo" />
+            </Link > 
 
-            </a>
-
+            </div> 
           </div>
 
           {/* <!-- Navbar on small screens --> */}

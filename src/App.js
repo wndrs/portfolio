@@ -4,11 +4,16 @@ import './App.css';
 import Home from './Home.js'
 import stairsmasterComp from './component/stairsmasterComp.js'
 import touring from './component/touring.js'
-import skate from './component/skate'
-import pawsi from './component/pawsi'
+import skate from './component/skate.js'
+import pawsi from './component/pawsi.js'
+import demo from './component/demo.js'
+import wndrs from './component/wndrs.js'
 
-import { withRouter,Route, } from 'react-router-dom'
-import { Router,  Switch,} from 'react-router'
+import alibay from './component/alibay.js'
+import clnr from './component/clnr.js'
+import wndrsGame from './component/wndrsGame.js'
+import { withRouter, Route, } from 'react-router-dom'
+import { Router, Switch, } from 'react-router'
 
 
 
@@ -26,12 +31,12 @@ class App extends Component {
     };
   }
 
-  
+
   componentDidMount() {
     setTimeout(() => {
       document.getElementById("load").style.display = "none"
       document.getElementById("root").className = ""
-      
+
     }, 2000);
 
   }
@@ -42,24 +47,27 @@ class App extends Component {
 
   render() {
     return (
-    
+
       <Switch>
-     
-       
-       <Route exact path='/' component={Home} />
-       <Route path='/touring' component={touring}  />
-       <Route path='/stairsmaster' component={stairsmasterComp}  />
-       <Route path='/skate' component={skate}  />
-       <Route path='/pawsi' component={pawsi}  />
-       
-       
-       
-       
-       
-       
-       
-    <Route path='/photoGal' component={photoGal}  />
-        </Switch>
+
+
+        <Route exact path='/' component={Home} />
+
+
+        <Route path='/touring' component={touring} />
+        <Route path='/stairsmaster' component={stairsmasterComp} />
+        <Route path='/skate' component={skate} />
+        <Route path='/pawsi' component={pawsi} />
+        <Route path='/demo' component={demo} />
+        <Route path='/wndrs' component={wndrs} />
+
+
+        <Route path='/alibay' component={alibay} />
+        <Route path='/clnr' component={clnr} />
+        <Route path='/wndrsGame' component={wndrsGame} />
+
+        <Route path='/photoGal' component={photoGal} />
+      </Switch>
 
     )
   }

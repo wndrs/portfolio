@@ -241,13 +241,25 @@ background-position: center;
 }
 
 .arrow{
-  width: 100px;
-
+  max-width: 100px;
+  width: 15vw;
   opacity: .55;
 }
 .arrow:hover{
   opacity: 1;
 }
+
+.playgame{
+  margin-top: 49px;
+  padding-bottom: 10px;
+  width: 56vw;
+  opacity: .75;
+  max-width: 264px;
+}
+.playgame:hover{
+  opacity: 1;
+}
+
 .frame{
 
   display: flex;
@@ -255,10 +267,28 @@ background-position: center;
   justify-content: space-between;
   margin-top: 30px;
 }
+
+frame2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
 @media only screen and (max-device-width: 420px) {
  .frame{
-  margin-top: -8vh;
+  margin-top: -20vh;
+  margin-bottom: -20vh;
   }
+
+  .frame2{
+    margin-top: -20vh;
+    margin-bottom: -20vh;
+    }
+  .iphoneframe{
+    width: 56vw;
+  }
+
+
 
 }
 
@@ -310,22 +340,29 @@ background-position: center;
 
 .logoWidth{
   padding-bottom: 10px;
-  width: 300px;
+  width: 58vw;
+  max-width: 300px;
 }
 
 .logoWidth2{
   padding-bottom: 10px;
-  width: 480px;
+  width: 58vw;
+  max-width: 480px;
 }
 
 .logoWidth3{
   padding-bottom: 10px;
-  width: 100px;
+  width: 58vw;
+  max-width: 100px;
+}
+.logoWidth4{
+  padding-bottom: 10px;
+  width: 19vw;
+  max-width: 120px;
 }
 
 .contact{
-  display: flex;
-  justify-content: space-around;
+
   padding-bottom: 100px;
   padding-top: 100px;
 }

@@ -10,7 +10,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="contact">
+      <div className="w3-row contact w3-center">
         {/* <div className="w3-hover-black marmax w3-container w3-content w3-padding-64 contactBackground" id="contact">
      
 
@@ -32,9 +32,9 @@ class Contact extends Component {
 
 
       
-            <div><i className="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> MONTREAL, QC<br /></div>
-            <div ><i className="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (514) 712 0366<br /></div>
-            <div onClick={this.sendMail} className="w3-hover-red"><i className="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right "></i> provostnoe@gmail.com <br/></div>
+            <div  className=" w3-col s0 m4 padding2" ><i className="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> MONTREAL, QC<br /></div>
+            <div className="w3-col s0 m4 padding2" ><i className="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (514) 712 0366<br /></div>
+            <div onClick={this.sendMail} className="w3-hover-red w3-col s0 m4 padding2"><i className="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right "></i> provostnoe@gmail.com <br/></div>
         
 
 

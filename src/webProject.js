@@ -9,6 +9,7 @@ import poster from "./web/poster.png"
 import Artboard from "./web/Artboard 1.png"
 import wndrs from "./image/wndrs anim .png"
 import commingSoon from "./image/commingSoon.png"
+import { Link } from 'react-router-dom'
 
 
 
@@ -20,15 +21,7 @@ class WebProject extends Component {
 
         };
     }
-    alibayClick = () => {
-        this.setState({ alibay: true })
 
-    }
-
-    alibayOff = () => {
-        this.setState({ alibay: false })
-
-    }
 
     posterClick = () => {
         this.setState({ poster: true })
@@ -39,25 +32,7 @@ class WebProject extends Component {
         this.setState({ poster: false })
 
     }
-    clnrClick = () => {
-        this.setState({ clnr: true })
-
-    }
-
-    clnrOff = () => {
-        this.setState({ clnr : false })
-
-    }
-
-    wndrsClick = () => {
-        this.setState({ wndrsState: true })
-
-    }
-
-    wndrsOff = () => {
-        this.setState({ wndrsState: false })
-
-    }
+  
     render() {
         if (this.state.alibay === true) {
             return (
@@ -127,7 +102,7 @@ class WebProject extends Component {
                     <i className="fa fa-close w3-xxlarge closex w3-hover-text-black" onClick={this.wndrsOff}></i>
                     <div className="overlay-content">
 
-                        <img className="logoWidth3" id="logoW" src={wndrs} alt="logo" />
+                        <img className="logoWidth4" id="logoW" src={wndrs} alt="logo" />
                         <div className="frame">
                             <iframe id="iframe2" title="touring" src="https://player.vimeo.com/video/265296801" width="640" height="360" frameBorder="0" webkitallowfullscreen="true"
                                 mozallowfullscreen="true" allowFullScreen></iframe>
@@ -157,22 +132,22 @@ class WebProject extends Component {
 
 
 
-                    <div className="w3-col s0 m0 padding1">
-                        <img alt="" src={mac} className="w3-hover-opacity width100" onClick={this.alibayClick} />
+                    <div className="w3-col  m0 padding1">
+                    <Link to='/alibay'> <img alt="" src={mac} className="w3-hover-opacity width100"  /> </Link> 
                         <img alt="" src={Artboard} className=" width30" />
                     </div>
-                    <div className="w3-col s0 m6 padding1">
+                    <div className="w3-col s6 m6 padding1">
                         <img alt="" src={ipad} className="w3-hover-opacity width100" onClick={this.posterClick} />
                         <img alt="" src={poster} className="width30" />
                     </div>
-                    <div className="w3-col s0 m6 padding1">
-                        <img alt="" src={iphone} className="w3-hover-opacity width100" onClick={this.clnrClick} />
+                    <div className="w3-col s6 m6 padding1">
+                    <Link to='/clnr'><img alt="" src={iphone} className="w3-hover-opacity width100" onClick={this.clnrClick} /> </Link> 
                         <img alt="" src={logoanim1} className=" width10" />
                     </div>
-                    <div className="w3-col s0 m0 padding1">
-                        <a className="w3-center" onClick={this.wndrsClick}>
-                            <img src={tomProSkier} className="w3-hover-opacity width100" alt="" />
-                        </a>
+                    <div className="w3-col   m0 padding1">
+                    <Link to='/wndrsGame'>
+                            <img src={tomProSkier} className="w3-hover-opacity width100" alt="" /></Link> 
+                    
                         <img alt="" src={wndrs} className=" width10" />
                     </div>
 

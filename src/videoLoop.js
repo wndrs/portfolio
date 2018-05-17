@@ -58,7 +58,7 @@ class VideoLoop extends Component {
     }
 
     render() {
-        console.log(window.location.pathname)
+
         window.onscroll = function () {
 
             if (document.body.scrollTop >= 500 || document.documentElement.scrollTop > 500) {

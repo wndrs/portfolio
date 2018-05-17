@@ -37,12 +37,12 @@ class stairsmasterComp extends Component {
       <div id="myModal" className="modal">
         <i className="fa fa-close w3-xxlarge closex w3-hover-text-black" onClick={this.stairsmasterOff}></i>
         <div className="overlay-content">
-          <img className="logoWidth2" id="logoW" src={stairsMasterLogo} alt="logo" />
+          <img className="logoWidth2 bouzinb" id="logoW" src={stairsMasterLogo} alt="logo" />
 
           <div className="frame">
             <img className="arrow" id="logoW" onClick={this.moin} src={arrow2} alt="logo" />
 
-            <iframe id="iframe2" title="touring" src="https://player.vimeo.com/video/199738961" width="640" height="360" frameBorder="0" webkitallowfullscreen="true"
+            <iframe className="iphoneframe" id="iframe2" title="touring" src="https://player.vimeo.com/video/199738961" width="640" height="360" frameBorder="0" webkitallowfullscreen="true"
               mozallowfullscreen="true" allowFullScreen></iframe>
             <img className="arrow" id="logoW" onClick={this.plus} src={arrow} alt="logo" />
           </div>
