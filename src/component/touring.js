@@ -48,9 +48,7 @@ class stairsmasterComp extends Component {
             <img className="arrow" id="logoW" onClick={this.plus} src={arrow} alt="logo" />
           </div>
 
-          <p className="videoTexte">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. or incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p  className="videoTexte">This was my first time in the Chic-Choc Mountains, QC.  Filming in the backcountry was scary and hard, but and up being something i love. We only had 4 days to make this 20h drive roundtrip  and film as much ski as possible. Not to forget that snow condition where pretty bad compare to what the Chic-Choc Mountains normally offer. No matters what  Dom Laporte, Nuka Choquette and Marc- Antoine Belhumeur put there skis to the test and end up doing some nasty lines. In this video i’m trying to give this same feeling of going from scared to happy.   </p>
 
         </div>
       </div>

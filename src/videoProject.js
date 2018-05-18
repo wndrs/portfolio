@@ -63,7 +63,7 @@ class VideoProject extends Component {
               <iframe id="iframe2" title="touring" src="https://player.vimeo.com/video/248658478" width="640" height="360" frameBorder="0" webkitallowfullscreen="true"
                 mozallowfullscreen="true" allowFullScreen></iframe>
             </div>
-            <p className="videoTexte">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            <p className="videoTexte w3-hover-texte-black">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
               et dolore magna aliqua. or incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>

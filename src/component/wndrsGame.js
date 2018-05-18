@@ -38,7 +38,7 @@ class wndrsGame extends Component {
       <div id="myModal" className="modal">
         <i className="fa fa-close w3-xxlarge closex w3-hover-text-black" onClick={this.Off}></i>
         <div className="overlay-content">
-          <img className="logoWidth4" id="logoW" src={wndrs} alt="logo" />
+          <img className="logoWidth5" id="logoW" src={wndrs} alt="logo" />
 
           <div className="frame">
             <img className="arrow" id="logoW" onClick={this.moin} src={arrow2} alt="logo" />

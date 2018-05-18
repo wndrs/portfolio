@@ -13,7 +13,7 @@ class stairsmasterComp extends Component {
     super();
 
     this.state = {
-
+      teaser:false
     };
   }
 
@@ -31,6 +31,16 @@ class stairsmasterComp extends Component {
 
   }
 
+  teaser= () => {
+    this.setState({ teaser: true })
+
+  }
+
+  full = () => {
+    this.setState({ teaser: false })
+
+  }
+
   render() {
 
     return (
@@ -42,13 +52,23 @@ class stairsmasterComp extends Component {
           <div className="frame">
             <img className="arrow" id="logoW" onClick={this.moin} src={arrow2} alt="logo" />
 
-            <iframe className="iphoneframe" id="iframe2" title="touring" src="https://player.vimeo.com/video/199738961" width="640" height="360" frameBorder="0" webkitallowfullscreen="true"
-              mozallowfullscreen="true" allowFullScreen></iframe>
+            {!this.state.teaser && <iframe className="iphoneframe" id="iframe2" title="touring" src="https://player.vimeo.com/video/199738961" width="640" height="360" frameBorder="0" webkitallowfullscreen="true"
+              mozallowfullscreen="true" allowFullScreen></iframe>}
+
+            {this.state.teaser && <iframe className="iphoneframe " id="iframe2" title="touring" src="https://player.vimeo.com/video/200273778" width="640" height="360" frameBorder="0" webkitallowfullscreen="true"
+              mozallowfullscreen="true" allowFullScreen></iframe>}
+
             <img className="arrow" id="logoW" onClick={this.plus} src={arrow} alt="logo" />
           </div>
-          <p className="videoTexte">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. or incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+
+
+          <p className="videoTexte">StairsMaster is the biggest urbain ski competition in Canada. Only 5 pro skier get to be invited to this event. Road tripping around Quebec province with practically
+           no budget, definitely no plan and a lot of beer is  Dom Laporte definition of urban skiing. This edit is roff and cheap to give the feel of what urbain skiing is for us. You can also watch the
+           teaser of this project below.   </p>
+
+          {!this.state.teaser && <p onClick={this.teaser} className="videoTexte w3-hover-text-black">click here to see teaser  </p>}
+          {this.state.teaser && <p onClick={this.full} className="videoTexte w3-hover-text-black">click here to see full project  </p>}
         </div>
       </div>
 

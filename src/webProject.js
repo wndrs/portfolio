@@ -34,31 +34,11 @@ class WebProject extends Component {
     }
   
     render() {
-        if (this.state.alibay === true) {
-            return (
-                <div id="myModal" className="modal">
-                    <i className="fa fa-close w3-xxlarge closex w3-hover-text-black" onClick={this.alibayOff}></i>
-                    <div className="overlay-content">
 
-                        <img className="logoWidth" id="logoW" src={Artboard} alt="logo" />
-                        <div className="frame">
-                            <iframe id="iframe2" title="touring" src="https://player.vimeo.com/video/269197596" width="640" height="360" frameBorder="0" webkitallowfullscreen="true"
-                                mozallowfullscreen="true" allowFullScreen></iframe>
-                        </div>
-
-                        <p className="videoTexte">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                          et dolore magna aliqua. or incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-                    </div>
-                </div>
-
-            )
-        }
 
         if (this.state.poster === true) {
             return (
-                <div id="myModal" className="modal">
+                <div id="myModal" className="modalOld">
                     <i className="fa fa-close w3-xxlarge closex w3-hover-text-black" onClick={this.posterOff}></i>
                     <div className="overlay-content">
 
@@ -72,51 +52,8 @@ class WebProject extends Component {
             )
         }
 
-        if (this.state.clnr === true) {
-            return (
-                <div id="myModal" className="modal">
-                    <i className="fa fa-close w3-xxlarge closex w3-hover-text-black" onClick={this.clnrOff}></i>
-                    <div className="overlay-content">
 
-                        <img className="logoWidth3" id="logoW" src={logoanim1} alt="logo" />
-                        <div className="frame">
-                            <iframe id="iframe2" title="touring" src="https://player.vimeo.com/video/269197637" width="640" height="360" frameBorder="0" webkitallowfullscreen="true"
-                                mozallowfullscreen="true" allowFullScreen></iframe>
-                        </div>
 
-                        <p className="videoTexte">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                          et dolore magna aliqua. or incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-          <iframe   title="touring" src="https://player.vimeo.com/video/258202836" width="320" height="180" frameborder="0" allowfullscreen></iframe>
-
-                    </div>
-                </div>
-
-            )
-        }
-
-        if (this.state.wndrsState === true) {
-            return (
-                <div id="myModal" className="modal">
-                    <i className="fa fa-close w3-xxlarge closex w3-hover-text-black" onClick={this.wndrsOff}></i>
-                    <div className="overlay-content">
-
-                        <img className="logoWidth4" id="logoW" src={wndrs} alt="logo" />
-                        <div className="frame">
-                            <iframe id="iframe2" title="touring" src="https://player.vimeo.com/video/265296801" width="640" height="360" frameBorder="0" webkitallowfullscreen="true"
-                                mozallowfullscreen="true" allowFullScreen></iframe>
-                        </div>
-
-                        <p className="videoTexte">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                          et dolore magna aliqua. or incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-                    </div>
-                </div>
-
-            )
-        }
 
         return (
             <div className="w3-content  w3-padding-64 padding5" id="web">

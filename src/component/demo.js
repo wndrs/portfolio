@@ -41,7 +41,7 @@ class demo extends Component {
           <div className="frame">
             <img className="arrow" id="logoW" onClick={this.moin} src={arrow2} alt="logo" />
 
-            <iframe className="iphoneframe" id="iframe2" title="touring" src="https://player.vimeo.com/video/189559042" width="640" height="360" frameBorder="0" webkitallowfullscreen="true"
+            <iframe className="iphoneframe" id="iframe2" title="touring" src="https://player.vimeo.com/video/248658478" width="640" height="360" frameBorder="0" webkitallowfullscreen="true"
               mozallowfullscreen="true" allowFullScreen></iframe>
             <img className="arrow" id="logoW" onClick={this.plus} src={arrow} alt="logo" />
           </div>

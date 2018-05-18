@@ -12,6 +12,7 @@ import node_js from "./image/node_js.png";
 import angular from "./image/angular.png";
 import ai from "./image/ai.png";
 import comp1 from "./image/Composition-1.gif";
+import { Link } from 'react-router-dom'
 
 
 
@@ -48,10 +49,10 @@ class AboutMe extends Component {
 
           {/* <!-- Hide this text on small devices --> */}
           <div className="w3-col m6 w3-hide-small ">
-            <p align="justify">WNDRS stands for wanderers. A wanderer is a person who rather travels around  than settling down in one place. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat. </p>
+            <p align="justify">I'm interested in all kinds of visual communication. I like working from the conception to the finish of an idea.
+             I’m  working with  javascript using  technologies like node.js, React and Firebase to create web app / mobile web app that run smoothly. 
+             I have strong skills and interest in UI/UX and drive my decisions to provide the best for final users. In my spare time (beside surfing, skiing and kiting), 
+             i do vidéo under the name of  <Link to='/wndrs'><a className="w3-hover-text-black" >WNDRS</a></Link> with my partner Zachary Bleau.  I’m know looking for new challenge that will combine all of my skills and passions. </p>
           </div>
         </div>
         <p className="w3-large w3-center w3-padding-16">My Daily Weapon:</p>

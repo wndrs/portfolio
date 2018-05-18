@@ -274,6 +274,16 @@ frame2{
   justify-content: center;
   margin-top: 30px;
 }
+
+.frame3{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -20px;
+
+}
+
 @media only screen and (max-device-width: 420px) {
  .frame{
   margin-top: -20vh;
@@ -284,6 +294,12 @@ frame2{
     margin-top: -20vh;
     margin-bottom: -20vh;
     }
+
+
+    .frame{
+      margin-top: -20vh;
+      margin-bottom: -20vh;
+      }
   .iphoneframe{
     width: 56vw;
   }
@@ -360,7 +376,11 @@ frame2{
   width: 19vw;
   max-width: 120px;
 }
-
+.logoWidth5{
+padding-bottom: 10px;
+width: 31vw;
+max-width: 190px;
+}
 .contact{
 
   padding-bottom: 100px;
