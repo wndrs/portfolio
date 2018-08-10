@@ -4,7 +4,7 @@ import logoanim1 from "../web/logoanim1.png"
 import arrow from "../image/arrow.png"
 import arrow2 from "../image/arrow2.png"
 import { withRouter } from 'react-router-dom'
-import { Link } from 'react-router-dom'
+
 
 
 class clnr extends Component {
@@ -12,7 +12,7 @@ class clnr extends Component {
     super();
 
     this.state = {
-
+      teaser: false
     };
   }
 
@@ -27,6 +27,11 @@ class clnr extends Component {
 
   plus = () => {
     this.props.history.push('/wndrsGame')
+
+  }
+
+  teaser = () => {
+    this.setState({ teaser: true })
 
   }
 
@@ -45,10 +50,14 @@ class clnr extends Component {
               mozallowfullscreen="true" allowFullScreen></iframe>
             <img className="arrow" id="logoW" onClick={this.plus} src={arrow} alt="logo" />
           </div>
-          <p className="videoTexte">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. or incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p className="videoTexte"> clnr.me is a mobile application for independent dry cleaners & customers. Developed with JavaScript, React, Firebase, Express, Node, CSS & HTML. Group project at decodeMtl. </p>
+          {!this.state.teaser && <p onClick={this.teaser} className="videoTexte w3-hover-text-black">click here to clnr add </p>}
+          <div className="margtop">
+            {this.state.teaser && <iframe className="iphoneframe" id="iframe2" title="touring" src="https://player.vimeo.com/video/258202836" width="640" height="360" frameBorder="0" webkitallowfullscreen="true"
+              mozallowfullscreen="true" allowFullScreen></iframe>}
+          </div>
         </div>
+
       </div>
 
     )

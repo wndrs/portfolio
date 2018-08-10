@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import './style.css';
 import loopVideo from './parallax/loop.mp4';
-import loopVideoMobile from './parallax/iphoneScreen.png';
+import loopVideoMobile from './parallax/iphoneScreen.gif';
 import logo from './parallax/logo.png'
 
 import { withGetScreen } from 'react-getscreen'
@@ -61,7 +61,7 @@ class VideoLoop extends Component {
 
         window.onscroll = function () {
 
-            if (document.body.scrollTop >= 500 || document.documentElement.scrollTop > 500) {
+            if (document.body.scrollTop >= 500 || document.documentElement.scrollTop > 500 && this.logoIntro !== undefined) {
                 this.logoIntro.className = "hidden overlay3"
                 this.logoW.className = 'hidden'
                 this.logoB.className = 'logoWhite'

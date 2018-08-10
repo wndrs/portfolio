@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import '../App.css'
-import touring from "../video/touring.jpg"
 import touringLogo from "../image/touringLogo.png"
 import { withRouter } from 'react-router-dom'
-import { Link } from 'react-router-dom'
 import arrow from "../image/arrow.png"
 import arrow2 from "../image/arrow2.png"
 
@@ -48,7 +46,7 @@ class stairsmasterComp extends Component {
             <img className="arrow" id="logoW" onClick={this.plus} src={arrow} alt="logo" />
           </div>
 
-          <p  className="videoTexte">This was my first time in the Chic-Choc Mountains, QC.  Filming in the backcountry was scary and hard, but and up being something i love. We only had 4 days to make this 20h drive roundtrip  and film as much ski as possible. Not to forget that snow condition where pretty bad compare to what the Chic-Choc Mountains normally offer. No matters what  Dom Laporte, Nuka Choquette and Marc- Antoine Belhumeur put there skis to the test and end up doing some nasty lines. In this video i’m trying to give this same feeling of going from scared to happy.   </p>
+          <p  className="videoTexte">Chic-Choc Mountains, QC.  Challenging filming, still, my passion. Twenty hours round trip drive for 4 days of filming, in unfortunate bad ski conditions. Dom Laporte, Nuka Choquette and Marc-Antoine Belhumeur ended up doing some nasty lines. My intent was to demonstrate the experience we lived that continuously passed from scared to joyful.</p>
 
         </div>
       </div>

@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
-import stairsmaster from "./video/stairsmaster.jpg"
-import stairsMasterLogo from "./image/stairsMasterLogo.png"
 import { withRouter } from 'react-router-dom'
-import { Link } from 'react-router-dom'
 import './photoGallery.css'
 import photo1 from "./photo/1a.jpeg"
 import photo2 from "./photo/2a.jpeg"
@@ -40,8 +37,8 @@ class photoGal extends Component {
     };
   }
   componentDidMount() {
-   
-    this.setState({ photoNum: this.props.location.state.photoIs })
+
+    this.setState({ photoNum: 1 })
   }
    
 

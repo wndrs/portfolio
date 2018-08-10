@@ -57,10 +57,10 @@ class WebProject extends Component {
 
         return (
             <div className="w3-content  w3-padding-64 padding5" id="web">
-                <h3 className="w3-center">MY WORK</h3>
+                <h3 className="w3-center">WEB</h3>
                 <p className="w3-center">
-                    <em>Here are some of my latest lorem work ipsum tipsum.
-                <br />Click on the images to make them bigger</em>
+                    <em>Web projects and mobile apps that I’ve worked on.
+                <br />Click to learn about each project</em>
                 </p>
 
 

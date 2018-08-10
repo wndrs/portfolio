@@ -4,7 +4,7 @@ import './App.css';
 import Home from './Home.js'
 import stairsmasterComp from './component/stairsmasterComp.js'
 import touring from './component/touring.js'
-import skate from './component/skate.js'
+import muralLiveSession from './component/muralLiveSession'
 import pawsi from './component/pawsi.js'
 import demo from './component/demo.js'
 import wndrs from './component/wndrs.js'
@@ -12,12 +12,12 @@ import wndrs from './component/wndrs.js'
 import alibay from './component/alibay.js'
 import clnr from './component/clnr.js'
 import wndrsGame from './component/wndrsGame.js'
-import { withRouter, Route, } from 'react-router-dom'
-import { Router, Switch, } from 'react-router'
+import {HashRouter, Route,Link, Switch } from 'react-router-dom'
 
 
 
-import { BrowserRouter, } from 'react-router-dom'
+
+
 import photoGal from './photoGal.js';
 
 
@@ -47,7 +47,7 @@ class App extends Component {
 
   render() {
     return (
-
+<HashRouter>
       <Switch>
 
 
@@ -56,19 +56,16 @@ class App extends Component {
 
         <Route path='/touring' component={touring} />
         <Route path='/stairsmaster' component={stairsmasterComp} />
-        <Route path='/skate' component={skate} />
+        <Route path='/muralLiveSession' component={muralLiveSession} />
         <Route path='/pawsi' component={pawsi} />
         <Route path='/demo' component={demo} />
         <Route path='/wndrs' component={wndrs} />
-
-
         <Route path='/alibay' component={alibay} />
         <Route path='/clnr' component={clnr} />
         <Route path='/wndrsGame' component={wndrsGame} />
-
         <Route path='/photoGal' component={photoGal} />
       </Switch>
-
+      </HashRouter>
     )
   }
 }

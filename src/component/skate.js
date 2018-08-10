@@ -4,7 +4,7 @@ import skatePic from "../image/skatePic.png"
 import arrow from "../image/arrow.png"
 import arrow2 from "../image/arrow2.png"
 import { withRouter } from 'react-router-dom'
-import { Link } from 'react-router-dom'
+
 
 
 class skate extends Component {
@@ -45,9 +45,7 @@ class skate extends Component {
               mozallowfullscreen="true" allowFullScreen></iframe>
             <img className="arrow" id="logoW" onClick={this.plus} src={arrow} alt="logo" />
           </div>
-          <p className="videoTexte">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. or incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p className="videoTexte"> Anthony Germain cruising down the street of Montréal. I did filming and editing. </p>
         </div>
       </div>
 

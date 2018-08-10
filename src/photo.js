@@ -83,10 +83,10 @@ class Photo extends Component {
         return (
 
             <div className="w3-content w3-container w3-padding-64" id="portfolio">
-                <h3 className="w3-center">MY WORK</h3>
+                <h3 className="w3-center">PHOTOS</h3>
                 <p className="w3-center">
-                    <em>Here are some of my latest lorem work ipsum tipsum.
-                    <br /> Click on the images to make them bigger</em>
+                    <em>Taking pictures wherever I go… Yet another passion of mine. 
+                    </em>
                 </p>
                 <br />
 
@@ -112,6 +112,7 @@ class Photo extends Component {
                         <div className="w3-col s4 padding2">
                             <img alt="" src={this.state.slideIndex[5]} onClick={this.openModal5} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
+                        {this.state.moreImages &&<div>
                         <div className="w3-col s4 padding2">
                             <img alt="" src={this.state.slideIndex[6]} onClick={this.openModal6} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
@@ -121,7 +122,7 @@ class Photo extends Component {
                         <div className="w3-col s4 padding2">
                             <img alt="" src={this.state.slideIndex[8]} onClick={this.openModal8} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>
-                        {this.state.moreImages &&<div>
+                       
                         <div className="w3-col s4 padding2">
                             <img alt="" src={this.state.slideIndex[9]} onClick={this.openModal9} className="hover-shadow w3-hover-opacity cursor width100" />
                         </div>

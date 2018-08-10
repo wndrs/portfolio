@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
 import '../App.css'
-import stairsmaster from "../video/stairsmaster.jpg"
 import stairsMasterLogo from "../image/stairsMasterLogo.png"
 import arrow from "../image/arrow.png"
 import arrow2 from "../image/arrow2.png"
 import { withRouter } from 'react-router-dom'
-import { Link } from 'react-router-dom'
+
 
 
 class stairsmasterComp extends Component {
@@ -63,9 +62,7 @@ class stairsmasterComp extends Component {
 
 
 
-          <p className="videoTexte">StairsMaster is the biggest urbain ski competition in Canada. Only 5 pro skier get to be invited to this event. Road tripping around Quebec province with practically
-           no budget, definitely no plan and a lot of beer is  Dom Laporte definition of urban skiing. This edit is roff and cheap to give the feel of what urbain skiing is for us. You can also watch the
-           teaser of this project below.   </p>
+          <p className="videoTexte">StairsMaster is the biggest urbain ski competition in Canada. Only 5 pro skier get to be invited to this event. Road tripping around Quebec province with practically no budget, definitely no plan (but plenty of beer) is Dom Laporte definition of urban skiing. Click to view.    </p>
 
           {!this.state.teaser && <p onClick={this.teaser} className="videoTexte w3-hover-text-black">click here to see teaser  </p>}
           {this.state.teaser && <p onClick={this.full} className="videoTexte w3-hover-text-black">click here to see full project  </p>}

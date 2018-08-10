@@ -199,11 +199,19 @@ background-position: center;
 }
 
 
-#profilePic {
+.profilePic {
   
   width: 286px;
 
 }
+
+.mural{
+  width: 100px;
+  margin-top: 10px;
+}
+
+
+
 
 .introVideo{
   max-width: 100vw;
@@ -283,6 +291,9 @@ frame2{
   margin-top: -20px;
 
 }
+.margtop{
+  margin-top: 10px
+}
 
 @media only screen and (max-device-width: 420px) {
  .frame{
@@ -296,14 +307,17 @@ frame2{
     }
 
 
-    .frame{
+    .frame3{
       margin-top: -20vh;
       margin-bottom: -20vh;
       }
   .iphoneframe{
     width: 56vw;
   }
-
+  .margtop{
+    margin-top: -10vh;
+  }
+  
 
 
 }
@@ -357,7 +371,7 @@ frame2{
 .logoWidth{
   padding-bottom: 10px;
   width: 58vw;
-  max-width: 300px;
+  max-width: 183px;
 }
 
 .logoWidth2{
@@ -381,6 +395,11 @@ padding-bottom: 10px;
 width: 31vw;
 max-width: 190px;
 }
+.logoWidth7 {
+  margin-bottom: 5px;
+  width: 58vw;
+  max-width: 150px;
+}
 .contact{
 
   padding-bottom: 100px;
@@ -392,3 +411,4 @@ max-width: 190px;
  padding: 10px;
 
 }
+

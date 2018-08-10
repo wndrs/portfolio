@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 import '../App.css'
 import logoBlack from '../image/logoBlack.png'
-import arrow from "../image/arrow.png"
-import arrow2 from "../image/arrow2.png"
 import { withRouter } from 'react-router-dom'
-import { Link } from 'react-router-dom'
+
 
 
 class wndrs extends Component {
@@ -47,9 +45,10 @@ class wndrs extends Component {
              
   
           </div>
-          <p className="videoTexte">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. or incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p className="videoTexte">WNDRS is living and documenting the counter culture’s. We live in the authentic, high-quality, restless and reckless. We have a crush for surfing skating and good music and we work in the manner it deserve to be. 
+
+
+</p>
         </div>
       </div>
 

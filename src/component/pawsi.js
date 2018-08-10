@@ -3,9 +3,8 @@ import '../App.css'
 import pawsiPic from "../image/pawsiLogo.png"
 import arrow from "../image/arrow.png"
 import arrow2 from "../image/arrow2.png"
-import gif from "../video/pawsi.gif"
 import { withRouter } from 'react-router-dom'
-import { Link } from 'react-router-dom'
+
 
 
 class pawsi extends Component {
@@ -22,7 +21,7 @@ class pawsi extends Component {
 
   }
   moin = () => {
-    this.props.history.push('/skate')
+    this.props.history.push('/muralLiveSession')
 
   }
 
@@ -46,9 +45,7 @@ class pawsi extends Component {
               mozallowfullscreen="true" allowFullScreen></iframe>
             <img className="arrow" id="logoW" onClick={this.plus} src={arrow} alt="logo" />
           </div>
-          <p className="videoTexte">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. or incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p className="videoTexte">Pawsitively health is a one of a kind platform that share pet content. A good example of my motion design and editing skills (editing, animation, soundmix, 2d cartoon animation, title animation, picture animation, 3d motion tracker and 3d animation). </p>
  
         </div>
 
