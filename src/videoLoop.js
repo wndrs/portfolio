@@ -16,7 +16,7 @@ class VideoLoop extends Component {
             logo: true
         };
     }
-
+//sdcasdcv
     componentDidMount() {
         setTimeout(() => {
             document.getElementById("load").style.display = "none"
