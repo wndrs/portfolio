@@ -83,7 +83,7 @@ class Home extends Component {
             <a className=" test w3-bar-item  w3-hover-red w3-button w3-hide-small" onClick={() => scrollToComponent(this.photo, { offset: 400, align: 'top', duration: 1500 })}>
               <i className="fa "></i> PHOTO</a>
             <a className="w3-bar-item w3-button  w3-hover-red w3-hide-small" onClick={() => scrollToComponent(this.ContactMe, { offset: 0, align: 'top', duration: 1500 })}>
-              <i className="fa "></i> CONTACT Me</a>
+              <i className="fa "></i> CONTACT</a>
             <div className=" w3-button w3-hide-small w3-right w3-hover-red">
               <Link to='/wndrs'>  <img className="logoWhite" id="logoW" src={logoWhite} alt="logo" />
                 <img className="logoWhite hidden " id="logoB" src={logoBlack} alt="logo" />
